@@ -30,6 +30,7 @@ fun main() = application {
                     CompositionLocalProvider(
                         LocalWindowExceptionHandlerFactory provides WindowExceptionHandlerFactory {
                             WindowExceptionHandler {
+                                println("catch exception")
                                 libraryErrorMessage = it.message
                             }
                         }
